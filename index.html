@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIJAM: commissions</title>
+    <link rel="stylesheet" href="style_commission.css">
+        <link
+            rel="icon"
+            href="CIJAMlogo.png"
+            type="image/x-icon"/>
+</head>
+<body>
+<header id="navbar" role="banner" class="">
+    <div class="container">
+        <div class="header">
+        	<img class="image" src="CIJAMlogo.png" alt="CIJAM logo">
+            <h1 class="logotext">Collectif Indépendant de Jeunes pour un Avenir Meilleur</h1>
+            <h2 class="brand" href="/fr" title="Jeunes Engagés, Avenir Assuré">"Jeunes Engagés, Avenir Assuré"</h2>
+        </div>
+<ul class="menu">
+    <li>
+        <button class="custom-button">
+            <a href="" role="button" class="" aria-expanded="false" title="">Accueil</a>
+        </button>
+    </li>
+
+    <li>
+        <button class="custom-button">
+            <a href="" role="button" class="" aria-expanded="false" title="">Notre Mission</a>
+        </button>
+    </li>
+
+    <li>
+        <button class="custom-button" style="color: #000000; background-color: #008000;">
+            <a href="" role="button" title="" class="">Nos Commissions</a>
+        </button>
+    </li>
+    
+    <li>
+        <button class="custom-button">
+            <a href="https://cijam.github.io/cijam.notre_equipe/" role="button" class="" aria-expanded="false" title="">Notre Equipe</a>
+        </button>
+    </li>
+</ul>
+
+    </div>
+</header>
+
+
+<!-- Commission section -->
+<div class="commission-container">
+    <div class="commission">
+        <h2>Commission de la Santé</h2>
+        <p>Text explaining the work of the Commission de la Santé.</p>
+        <img class="commission-image" src="commission_sante_image.jpg" alt="Commission de la Santé">
+    </div>
+    <div class="commission">
+        <h2>Commission de l'Éducation</h2>
+        <p>Text explaining the work of the Commission de l'Éducation.</p>
+        <img class="commission-image" src="commission_education_image.jpg" alt="Commission de l'Éducation">
+    </div>
+</div>
+<div class="commission-container">
+    <div class="commission">
+        <h2>Commission de la Santé</h2>
+        <p>Text explaining the work of the Commission de la Santé.</p>
+        <img class="commission-image" src="commission_sante_image.jpg" alt="Commission de la Santé">
+    </div>
+    <div class="commission">
+        <h2>Commission de l'Éducation</h2>
+        <p>Text explaining the work of the Commission de l'Éducation.</p>
+        <img class="commission-image" src="commission_education_image.jpg" alt="Commission de l'Éducation">
+    </div>
+</div>
+<div class="commission-container">
+    <div class="commission">
+        <h2>Commission de la Santé</h2>
+        <p>Text explaining the work of the Commission de la Santé.</p>
+        <img class="commission-image" src="commission_sante_image.jpg" alt="Commission de la Santé">
+    </div>
+    <div class="commission">
+        <h2>Commission de l'Éducation</h2>
+        <p>Text explaining the work of the Commission de l'Éducation.</p>
+        <img class="commission-image" src="commission_education_image.jpg" alt="Commission de l'Éducation">
+    </div>
+</div>
+<div class="centered-commission-container">
+    <div class="centered-commission">
+        <h2>Health Commission</h2>
+        <p>Text explaining the work of the Health Commission.</p>
+        <img class="centered-commission-image" src="commission_sante_image.jpg" alt="Health Commission">
+    </div>
+</div>
+
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+</div>
+
+<!-- JavaScript -->
+
+<script>
+var modal = document.getElementById('myModal');
+
+var images = document.getElementsByClassName('commission-image');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+
+for (var i = 0; i < images.length; i++) {
+    images[i].onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+    }
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+
+
+
+
+var modal = document.getElementById('myModal');
+
+var images = document.getElementsByClassName('centered-commission-image');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+
+// Loop through all images and add click event listener
+for (var i = 0; i < images.length; i++) {
+    images[i].onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+    }
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+
+</script>
+
+
+
+<section id="contact" class="contact">
+    <div class="social-container">
+        <h2>Contactez-nous</h2>
+        <div class="contact-info">
+		<p style="margin-right: 2px; display: inline;">Email:</p><a href="mailto:usatcijam@gmail.com">			usatcijam@gmail.com</a>
+        	<p>Phone: +225 07 05 55 9812</p>
+        </div>
+        <div class="social-networks">
+            <h3>Suivez-nous sur les réseaux sociaux</h3>
+
+            <ul>
+		<button class="learn-more">
+    			<a href="https://www.instagram.com/cijam.ci/" target="_blank">
+				<span aria-hidden="true" class="circle"></span>
+	        		<span aria-hidden="true" class="icon arrow"></span>
+        			<span class="button-text">Instagram</span>
+    			</a>
+		</button>
+
+		<button class="learn-more">
+			<a href="https://www.tiktok.com/@cijam.ci" target="_blank">
+			        <span aria-hidden="true" class="circle"></span>
+			        <span class="icon arrow"></span>
+			        <span class="button-text">TikTok</span>
+			</a>
+		</button>
+
+            </ul>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>

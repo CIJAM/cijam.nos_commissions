@@ -16,7 +16,7 @@ body {
     padding: 3% 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; /* Ensure containers are evenly spaced */
+    justify-content: space-between;
 }
 
 /* Header styles */
@@ -25,109 +25,67 @@ body {
     padding: 0.5% 0;
     background-image: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1)), url(homespace_home.png);
     background-size: cover;
-    position: relative; /* Ensure positioning context for pseudo-element */
-    transition: background-image 1s ease; /* Slow transition */
+    position: relative;
+    transition: background-image 1s ease;
 }
 
-.header {
-    display: flex;
-}
-
+.header,
 .logo {
     display: flex;
     align-items: center;
 }
 
 .image {
-    height: 75px;
+    height: 150px;
     margin: 5px;
+}
+
+.logotext,
+.brand {
+    font-family: "Termina";
 }
 
 .logotext {
     font-size: 40px;
     color: #008000;
     margin: 40px;
-    text align: left;
-    font-family: "Termina";
+    margin-left: 5px;
     border-right: #FFA500 solid 3px;
-    padding-right: 125px; /* Add padding to separate from image */
+    padding-right: 100px;
 }
 
 .brand {
     font-size: 25px;
     color: #0B6623;
-    font-family: "Robotop";
-    margin-right: 90px; /* Space out from the logo */
-    padding-left: 125px; /* Add padding to separate from image */
+    margin-right: 90px;
+    padding-left: 100px;
 }
 
 /* Navigation menu styles */
 .menu {
     display: flex;
-    justify-content: flex-end; /* Align items to the right */
+    justify-content: flex-end;
 }
 
 .menu li {
-    margin-left: 30px; /* Adjust margin as needed */
+    margin-left: 30px;
 }
 
 .menu ul {
-    margin-left: 50px; /* Adjust margin as needed */
+    margin-left: 50px;
 }
 
 .menu a {
     color: #FFA500;
     text-decoration: none;
-    padding: 8px 12px; /* Increase padding for better clickability */
+    padding: 8px 12px;
     display: flex;
-    align-items: right; /* Center items vertically */
+    align-items: center;
     font-weight: bold;
 }
 
 .menu a:hover {
-    color: #FFFFFF; /* Change text color to white on hover */
-}
-
-.container {
-    width: 80%;
-    margin: auto;
-    padding: 2% 0;
-}
-
-.header {
-    display: flex;
-    align-items: center;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-}
-
-.image {
-    height: 75px;
-    margin: 5px;
-}
-
-.logo-text {
-    font-size: 35px;
-    color: #008000;
-    margin: 40px;
-    font-family: "Termina";
-    border-right: #FFA500 solid 3px;
-    padding-right: 50px;
-}
-
-.brand {
-    font-size: 25px;
-    color: #0B6623;
-    font-family: "Robotop";
-    margin-right: 50px;
-}
-
-.menu {
-    display: flex;
-    justify-content: flex-end;
+    color: #FFFFFF;
 }
 
 h1 {
@@ -136,6 +94,17 @@ h1 {
     font-family: Termina;
     font-size: 2.2em;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 .commission-container,

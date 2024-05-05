@@ -251,7 +251,7 @@ h1 {
 
     .image {
         height: 50px; /* Smaller height */
-        margin: 0px;
+        margin: 0;
         margin-top: 10px;
     }
 
@@ -262,7 +262,6 @@ h1 {
         border-right: #FFA500 solid 1px;
         padding-right: 10px; /* Smaller padding */
         margin-top: 10px; /* Reset margin */
-        padding-right: 0px; /* Reset padding */
     }
 
     .logotext, 

@@ -146,6 +146,7 @@ h1 {
 .centered-commission img {
     width: 100%;
     height: auto;
+    border-radius: 4%;
 }
 
 /* Additional styles for image container */
@@ -164,25 +165,47 @@ h1 {
 
 
 
-/* Modal styles */
+/* CSS for the modal */
 .modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    padding-top: 100px;
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 200px; /* Location of the box */
     left: 0;
     top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.9);
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
 }
 
 .modal-content {
     margin: auto;
     display: block;
-    width: 80%;
+    width: 90%;
+    max-width: 90%;
+}
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 150%;
     max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+.modal-content, #caption {  
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {transform: scale(0.1)} 
+    to {transform: scale(1)}
 }
 
 .close {
@@ -234,8 +257,9 @@ h1 {
 
 @media only screen and (max-width: 720px) {
     .container {
-        width: 100%;
+        width: 100%; /* Adjust container width to fit the screen */
         padding: 0;
+        overflow-x: hidden; /* Hide horizontal overflow to prevent content from getting cut off */
     }
     
     #navbar {

@@ -146,7 +146,7 @@ h1 {
 .centered-commission img {
     width: 100%;
     height: auto;
-    border-radius: 4%;
+    border-radius: 15%;
 }
 
 /* Additional styles for image container */
@@ -332,6 +332,20 @@ h1 {
     margin-right: 10px;
     margin-left: 10px;
 }
+
+    .commission h2,
+.centered-commission h2 {
+    font-size: 15px;
+    color: #008000;
+}
+
+    .commission p,
+.centered-commission p {
+    font-size: 8px;
+    color: #333;
+    text-align: justify;
+}
+
     
     .modal {
         display: none; /* Hidden by default */
